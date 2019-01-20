@@ -1,2 +1,3 @@
-# skydiving
-Skydiving related web app
+#  Skydiving Web Application 
+Skydiving related web app for managing a DZ
+
