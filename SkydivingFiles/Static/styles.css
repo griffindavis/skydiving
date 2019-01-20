@@ -1,35 +1,41 @@
+body {
+  background: #275ff1
+}
+
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr 1fr;
   grid-gap: 1em;
   background: white;
-  width: 99vw;
+  width: 98vw;
   height: 99vh;
   box-sizing: border-box;
-  justify-content: center;
-  align-content: center;
+  background: #275ff1
 }
 
-div:nth-child(even) {
-  background:#bbb
-}
+.singleLoad, .jumper:nth-child(even) {
+  background: #eee
+  }
 
-div:nth-child(odd) {
-  background:#eee
-}
+.singleLoad, .jumper:nth-child(odd) {
+  background: #ddd
+  }
 
 ul {
   list-style: none;
+  padding: 1px;
 }
 
 .jumperList {
   display: grid;
   grid-column: 2/3;
   grid-row: 1/2;
+  grid-template-rows: 1fr 4fr 1fr;
   border: 5px solid;
   padding: 1em;
   box-sizing: border-box;
+  background: #e3f9fa
 }
 
 .menu {
@@ -38,18 +44,28 @@ ul {
   border: 5px solid;
   padding: 1em;
   box-sizing: border-box;
+  background: #e3f9fa
 }
 
 .loads {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 3fr;
   border: 5px solid;
   padding: 1em;
   box-sizing: border-box;
+  background: #e3f9fa
 }
 
 .singleLoad {
   display: grid;
   border: 1px solid;
+}
+
+.loadHeader {
+  grid-column: 1/5;
+}
+
+.buttonFooter {
+  padding: 1em;
 }

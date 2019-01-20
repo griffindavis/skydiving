@@ -19,19 +19,22 @@
     <div class="container">
       <div class="jumperList" id="scrollable">
         <h1>Jumper List</h1>
-        <ul>
+        <ul id="activeJumpers">
+          <!--
           {% for jumper in jumperList %}
           <li class="=jumper">
             <span class='jumper'>{{jumper.name}} - {{jumper.license.lic}}</span>
           </li>
           {% endfor %}
+        -->
         </ul>
-        <button type="button" class="buttonFooterAdd">Add to Load</button>
-        <button type="button" class="buttonFooterRemove">Remove From Load</button>
+        <button type="button" class="buttonFooter">Add to Load</button>
+        <button type="button" class="buttonFooter">Remove From Load</button>
         <!-- could use check boxes for type of jumper (TI, Coach, etc.) -->
 
       </div>
       <div class="loads">
+        <h1 class="loadHeader">Today's Loads</h1>
       </div>
       <div class="menu">
         <button type="button">New Tandem Student</button>
