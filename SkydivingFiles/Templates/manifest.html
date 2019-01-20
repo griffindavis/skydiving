@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Manifest!</title>
+
+  </head>
+  <body>
+    <!--
+    Going to want to user jQuery to hide and unhide some
+    overlays that will be for adding new jumpers and such.
+
+    There will need to be a menu to navigate between views.
+
+    -->
+
+    <div class="container">
+      <div class="jumperList" id="scrollable">
+        <h1>Jumper List</h1>
+        <ul>
+          {% for jumper in jumperList %}
+          <li class="=jumper">
+            <span class='jumper'>{{jumper.name}} - {{jumper.license.lic}}</span>
+          </li>
+          {% endfor %}
+        </ul>
+        <button type="button" class="buttonFooterAdd">Add to Load</button>
+        <button type="button" class="buttonFooterRemove">Remove From Load</button>
+        <!-- could use check boxes for type of jumper (TI, Coach, etc.) -->
+
+      </div>
+      <div class="loads">
+      </div>
+      <div class="menu">
+        <button type="button">New Tandem Student</button>
+        <button type="button">New Solo Student</button>
+        <button type="button">New Fun Jumper</button>
+      </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='scripts.js') }}"></script>
+  </body>
+</html>

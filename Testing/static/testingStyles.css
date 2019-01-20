@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+
+.box {
+    width: 300px;
+    border: 5px solid blue;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin: 25px;
+    text-align: center;
+    white-space: nowrap;
+    float: left;
+    break-after: avoid;
+}

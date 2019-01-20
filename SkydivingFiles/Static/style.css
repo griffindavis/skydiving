@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+}
+
+.jumperList {
+  width: 25%;
+  height: 75%;
+  left: 75%;
+  border: 5px solid;
+  padding: 1em;
+  text-align: left;
+  float: right;
+  position: fixed;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  list-style: none;
+}
+
+.loads {
+  width: 75%;
+  height: 75%;
+  border: 5px solid;
+  padding: 1em;
+  float:left;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  position: fixed;
+  columns: 4;
+  overflow-x: scroll;
+}
+
+.menu {
+  box-sizing: border-box;
+  height: 24.5%;
+  width: 99%;
+  border: 5px solid;
+  padding: 1em;
+  bottom: 0;
+  border-radius: 0.5em;
+  position: fixed;
+}
+
+.jumper {
+  display: block;
+  position: relative;
+  border: 2px solid;
+  padding: 1em; 
+}
+
+.loadNum {
+  float: left;
+}
+
+.buttonFooterAdd {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+.buttonFooterRemove {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
+div#scrollable {
+  overflow-y: scroll;
+}
