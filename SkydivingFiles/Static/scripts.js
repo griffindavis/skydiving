@@ -1,6 +1,8 @@
 function listLoadFrame(load) {
-    var loadNum = "<ul class='singleLoad' id='" + load.load +"'> Load Number: " + load.load + "</ul>";
-    $(".loads").append(loadNum);
+    var loadNum = "<ul class='singleLoad' id='" + load.load +"'></ul>";
+    $(".loadDisplay").append(loadNum);
+    loadNum="<li class='loadHeader'>Load: " + load.load + "</li>";
+    $('#'+load.load).append(loadNum);
     var jumpers = load.jumpers;
     jumpers.forEach(function printName (jumper) {
       var name = jumper.name;

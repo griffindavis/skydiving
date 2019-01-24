@@ -4,8 +4,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 66% 33%;
+  grid-template-rows: 66% 33%;
   grid-gap: 1em;
   background: white;
   width: 98vw;
@@ -14,11 +14,11 @@ body {
   background: #275ff1
 }
 
-.singleLoad, .jumper:nth-child(even) {
+.singleLoad:nth-child(even), .jumper:nth-child(even) {
   background: #eee
   }
 
-.singleLoad, .jumper:nth-child(odd) {
+.singleLoad:nth-child(odd), .jumper:nth-child(odd) {
   background: #ddd
   }
 
@@ -38,10 +38,16 @@ ul {
   background: #e3f9fa
 }
 
-.menu {
-  display: grid;
+#activeJumpers {
+  box-sizing: border-box;
+  border: 5px solid;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.menuContainter {
   grid-column: 1/3;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
   border: 5px solid;
   padding: 1em;
   box-sizing: border-box;
@@ -50,7 +56,6 @@ ul {
 
 .loads {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 3fr;
   border: 5px solid;
   padding: 1em;
@@ -58,15 +63,25 @@ ul {
   background: #e3f9fa
 }
 
-.singleLoad {
+.loadDisplay {
   display: grid;
-  border: 1px solid;
+  grid-column-gap: 5px;
+  grid-auto-columns: 24%;
+  overflow-x: scroll;
+  grid-auto-flow: column;
+  overflow-y: hidden;
 }
+
+.singleLoad {
+  border: 2px solid;
+}
+
 
 .loadHeader {
-  grid-column: 1/5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
 }
 
-.buttonFooter {
-  padding: 1em;
+.button {
 }
