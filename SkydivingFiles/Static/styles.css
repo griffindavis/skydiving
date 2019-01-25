@@ -1,5 +1,5 @@
 body {
-  background: #275ff1
+  background: ghostwhite;
 }
 
 .container {
@@ -7,19 +7,18 @@ body {
   grid-template-columns: 66% 33%;
   grid-template-rows: 66% 33%;
   grid-gap: 1em;
-  background: white;
   width: 98vw;
-  height: 99vh;
+  height: 97vh;
   box-sizing: border-box;
-  background: #275ff1
+  background: ghostwhite;
 }
 
 .singleLoad:nth-child(even), .jumper:nth-child(even) {
-  background: #eee
+  background: aliceblue;
   }
 
 .singleLoad:nth-child(odd), .jumper:nth-child(odd) {
-  background: #ddd
+  background: lightgrey;
   }
 
 ul {
@@ -27,15 +26,16 @@ ul {
   padding: 1px;
 }
 
+/* rename to loadContainer */
 .jumperList {
   display: grid;
   grid-column: 2/3;
   grid-row: 1/2;
   grid-template-rows: 1fr 4fr 1fr;
-  border: 5px solid;
+  border-radius: 25px;
   padding: 1em;
   box-sizing: border-box;
-  background: #e3f9fa
+  background: lightskyblue;
 }
 
 #activeJumpers {
@@ -48,19 +48,20 @@ ul {
 .menuContainter {
   grid-column: 1/3;
   /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
-  border: 5px solid;
+  border-radius: 25px;
   padding: 1em;
   box-sizing: border-box;
-  background: #e3f9fa
+  background: lightskyblue;
 }
 
+/* rename to loadContainer */
 .loads {
   display: grid;
   grid-template-rows: 1fr 3fr;
-  border: 5px solid;
+  border-radius: 25px;
   padding: 1em;
   box-sizing: border-box;
-  background: #e3f9fa
+  background: lightskyblue;
 }
 
 .loadDisplay {

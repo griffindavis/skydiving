@@ -10,7 +10,8 @@ function listLoadFrame(load) {
       $("#" + load.load + "").append(listItem);
     });
   };
-
+// what if we ordered backwards?
+// wouldn't have to worry about adjusting the starting point
 function orderLoads() {
   var url = "//localhost:4000/upcomingLoads/";
   $.getJSON(url, function (data) {
