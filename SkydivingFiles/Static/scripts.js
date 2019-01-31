@@ -6,7 +6,7 @@ function listLoadFrame(load) {
     var jumpers = load.jumpers;
     jumpers.forEach(function printName (jumper) {
       var name = jumper.name;
-      var listItem = "<li id='jumper'>" + name + "</li>";
+      var listItem = "<li>" + name + "</li>";
       $("#" + load.load + "").append(listItem);
     });
   };
@@ -54,3 +54,13 @@ function loadJumpers() {
 
 orderLoads();
 loadJumpers();
+
+$('.jumper').mouseover(function(item) {
+  item.stopPropagation();
+  $(this).addClass('loadHover');
+});
+
+$('.loads .loadDisplay .singleLoad').mouseout(function(item) {
+  item.stopPropagation();
+  $(this).removeClass('loadHover');
+});
