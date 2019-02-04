@@ -5,7 +5,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 66% 33%;
-  grid-template-rows: 66% 33%;
+  grid-template-rows: 33% 66%;
   grid-gap: 1em;
   width: 98vw;
   height: 97vh;
@@ -26,8 +26,7 @@ ul {
   padding: 1px;
 }
 
-/* rename to loadContainer */
-.jumperList, .AddToLoad {
+.jumperContainer {
   display: grid;
   grid-column: 2/3;
   grid-row: 1/3;
@@ -36,10 +35,6 @@ ul {
   padding: 1em;
   box-sizing: border-box;
   background: lightskyblue;
-}
-
-.AddToLoad {
-  display: none;
 }
 
 #activeJumpers {
@@ -57,15 +52,21 @@ ul {
 
 .menuContainter {
   grid-column: 1/2;
-  /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   border-radius: 25px;
   padding: 1em;
   box-sizing: border-box;
   background: lightskyblue;
 }
+.addToLoad {
+  display: grid;
+  grid-column: 2/4;
+  border: 5px solid;
+}
 
-/* rename to loadContainer */
-.loads {
+.loadContainer {
   display: grid;
   grid-template-rows: 1fr 3fr;
   border-radius: 25px;

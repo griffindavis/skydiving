@@ -55,12 +55,14 @@ function loadJumpers() {
 orderLoads();
 loadJumpers();
 
+
 $('.jumper').mouseover(function(item) {
   item.stopPropagation();
   $(this).addClass('loadHover');
 });
 
-$('.loads .loadDisplay .singleLoad').mouseout(function(item) {
-  item.stopPropagation();
-  $(this).removeClass('loadHover');
-});
+//$('.jumper').onclick(function(item) {
+//  var toAdd = $('addToLoad');
+//  var newJumper = "<li>add this</li>"
+//  $('.addToLoad').appendChild(newJumper)
+//});
