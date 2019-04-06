@@ -68,6 +68,9 @@ def loadInfoJSON():
     session = engineMaker()
     loads = session.query(Load).all()
 
+@app.route('/backbone')
+def backboneTesting():
+    return render_template('backbone.html')
 
 def getTodaysDate():
     today = str(date.today())
