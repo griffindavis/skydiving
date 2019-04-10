@@ -24,6 +24,7 @@
           <!-- Jumper Section -->
         </ul>
         <div class="buttonContainer">
+          <p>Total: <span id='total'></span></p>
           <button type="button" class="buttonFooter">Add to Load</button>
           <button type="button" class="buttonFooter">Remove From Load</button>
           <button type="button" class="button">New Tandem Student</button>
@@ -56,6 +57,8 @@
       </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript" src="{{ url_for('static', filename='scrpts.js') }}"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='scriptsBackbone.js') }}"></script>
   </body>
 </html>

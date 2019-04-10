@@ -15,7 +15,7 @@ def engineMaker():
     return session
 
 @app.route('/')
-@app.route('/manifest')
+@app.route('/manifest', methods=['GET'])
 def manifest():
     session = engineMaker()
 
@@ -51,7 +51,7 @@ def packing():
 
     return render_template('packing.html')
 
-@app.route('/jumpers')
+@app.route('/jumpers', methods=['GET'])
 def jumpersJSON():
     session = engineMaker()
     jumpers = session.query(Jumper).all()
